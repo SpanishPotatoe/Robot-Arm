@@ -14,7 +14,7 @@
 
 // Coding for ArmBot: Javascript
 
-// 1 Motor, 3 servo's
+// 1 Motor, 3 servo's, 1 button, 1 joystick
 
 
 // Board setup
