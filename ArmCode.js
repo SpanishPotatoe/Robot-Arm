@@ -97,12 +97,12 @@ board.on("ready", function() {
   // eg. array.step( -20 );
 ]
 
-
-  function.ServoMove(){
-
-
-
-
-  }
-
 });
+
+
+function.ServoMove(){
+
+  if (
+
+
+};
