@@ -102,7 +102,7 @@ board.on("ready", function() {
   function ServoMove(){
 
     if ( this.x > .01 ){
-      incrementer *= 1;
+      servo.step(10);
     }
 
   }
