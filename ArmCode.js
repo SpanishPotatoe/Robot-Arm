@@ -62,7 +62,7 @@ board.on("ready", function() {
   });
 
 
-  // Servo API
+[  // Servo API
 
   // min()
   //
@@ -95,7 +95,14 @@ board.on("ready", function() {
   // step all servos by deg
   //
   // eg. array.step( -20 );
+]
 
-  servo.step (10);
+
+  function.ServoMove(){
+
+
+
+
+  }
 
 });
