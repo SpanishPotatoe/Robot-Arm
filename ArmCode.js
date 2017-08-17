@@ -24,6 +24,22 @@ var board = new five.Board();
 
 
 board.on("ready", function() {
+
+  // Create a new `joystick` hardware instance.
+  var joystick = new five.Joystick({
+    //   [ x, y ]
+    pins: ["A0", "A1"]
+  });
+
+  joystick.on("change", function() {
+    console.log("Joystick");
+    console.log("  x : ", this.x);
+    console.log("  y : ", this.y);
+    console.log("--------------------------------------");
+  });
+});
+
+board.on("ready", function() {
   var servo = new five.Servo(10);
 
   // Servo alternate constructor with options
@@ -38,7 +54,7 @@ board.on("ready", function() {
     startAt: 90,       // Immediately move to a degree
     center: true,      // overrides startAt if true and moves the servo to the center of the range
   });
-  
+
 
   // Add servo to REPL (optional)
   this.repl.inject({
@@ -80,5 +96,6 @@ board.on("ready", function() {
   //
   // eg. array.step( -20 );
 
-  servo.sweep();
+  servo.step (10);
+
 });
