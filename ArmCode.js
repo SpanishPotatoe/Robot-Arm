@@ -22,6 +22,10 @@
 var five = require("johnny-five");
 var board = new five.Board();
 
+
+
+// Servo setup
+
 board.on("ready", function() {
 
   // Initialize a Servo collection
@@ -85,6 +89,7 @@ board.on("ready", function() {
 });
 
 
+
 //Button setup
 board.on("ready", function() {
 
@@ -119,6 +124,7 @@ board.on("ready", function() {
     console.log("up");
   });
 });
+
 
 
 //Joystick setup
