@@ -98,3 +98,8 @@ board.on("ready", function() {
 ]
 
 });
+
+  function ServoMove(){
+
+    
+  }
