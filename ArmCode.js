@@ -23,123 +23,62 @@ var five = require("johnny-five");
 var board = new five.Board();
 
 
-
-// Servo setup
-
 board.on("ready", function() {
+  var servo = new five.Servo(10);
 
-  // Initialize a Servo collection
-  var servos = new five.Servos([9, 10]);
+  // Servo alternate constructor with options
 
+  var servo = new five.Servo({
+    id: "MyServo",     // User defined id
+    pin: 10,           // Which pin is it attached to?
+    type: "standard",  // Default: "standard". Use "continuous" for continuous rotation servos
+    range: [0,180],    // Default: 0-180
+    fps: 100,          // Used to calculate rate of movement between positions
+    invert: false,     // Invert all specified positions
+    startAt: 90,       // Immediately move to a degree
+    center: true,      // overrides startAt if true and moves the servo to the center of the range
+  });
+  */
 
-  servos.center();
-
-
-  // Inject the `servo` hardware into
-  // the Repl instance's context;
-  // allows direct command line access
+  // Add servo to REPL (optional)
   this.repl.inject({
-    servos: servos
+    servo: servo
   });
 
 
+  // Servo API
+
   // min()
   //
-  // set all servos to the minimum degrees
+  // set the servo to the minimum degrees
   // defaults to 0
   //
-  // eg. servos.min();
+  // eg. servo.min();
 
   // max()
   //
-  // set all servos to the maximum degrees
+  // set the servo to the maximum degrees
   // defaults to 180
   //
-  // eg. servos.max();
+  // eg. servo.max();
+
+  // center()
+  //
+  // centers the servo to 90°
+  //
+  // servo.center();
 
   // to( deg )
   //
-  // set all servos to deg
+  // Moves the servo to position by degrees
   //
-  // eg. servos.to( deg );
+  // servo.to( 90 );
 
   // step( deg )
   //
   // step all servos by deg
   //
-  // eg. servos.step( -20 );
+  // eg. array.step( -20 );
 
-  // stop()
-  //
-  // stop all servos
-  //
-  // eg. servos.stop();
-
-  // each( callbackFn )
-  //
-  // Execute callbackFn for each active servo instance
-  //
-  // eg.
-  // servos.each(function( servo, index ) {
-  //
-  //  `this` refers to the current servo instance
-  //
-  // });
-
-});
-
-
-
-//Button setup
-board.on("ready", function() {
-
-  // Create a new `button` hardware instance.
-  // This example allows the button module to
-  // create a completely default instance
-  button = new five.Button(2);
-
-  // Inject the `button` hardware into
-  // the Repl instance's context;
-  // allows direct command line access
-  board.repl.inject({
-    button: button
-  });
-
-  // Button Event API
-
-  // "down" the button is pressed
-  button.on("down", function() {
-    console.log("down");
-  });
-
-  // "hold" the button is pressed for specified time.
-  //        defaults to 500ms (1/2 second)
-  //        set
-  button.on("hold", function() {
-    console.log("hold");
-  });
-
-  // "up" the button is released
-  button.on("up", function() {
-    console.log("up");
-  });
-});
-
-
-
-//Joystick setup
-board.on("ready", function() {
-
-  // Create a new `joystick` hardware instance.
-  var joystick = new five.Joystick({
-    //   [ x, y ]
-    pins: ["A0", "A1"]
-  });
-
-  joystick.on("change", function() {
-    console.log("Joystick");
-    console.log("  x : ", this.x);
-    console.log("  y : ", this.y);
-    console.log("--------------------------------------");
-  });
+  servo.sweep();
 });
