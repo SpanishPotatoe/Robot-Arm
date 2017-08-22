@@ -42,7 +42,11 @@ board.on("ready", function() {
       if(this.x <= -0.5){
         servo.to(155);
       }
-  
+
+      if(this.x == 0){
+        servo.to(90);
+      }
+
   });
 
 
