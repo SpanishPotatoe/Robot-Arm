@@ -79,7 +79,7 @@ board.on("ready", function() {
 
 });
 
-servo.sweep()
+servo.sweep();
 
 board.on("ready", function() {
 
