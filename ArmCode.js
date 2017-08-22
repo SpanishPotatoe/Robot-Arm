@@ -35,10 +35,9 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
   });
-});
 
 
-board.on("ready", function() {
+  // Create a new 'servo' hardware instance
   var servo = new five.Servo(10);
 
   // Servo alternate constructor with options
@@ -94,5 +93,17 @@ board.on("ready", function() {
   // step all servos by deg
   //
   // eg. array.step( -20 );
+
+
+
+  function ServoMove() {
+
+    if (this.x > 0){
+      servo.sweep();
+    } else {
+      servo.to(90);
+    }
+
+  };
 
 });
