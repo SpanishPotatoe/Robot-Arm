@@ -36,7 +36,7 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
       if(this.x <= 0){
-        servo.sweep();
+        servo.step(75);
       }
 
   });
