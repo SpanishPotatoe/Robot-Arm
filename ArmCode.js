@@ -50,14 +50,14 @@ board.on("ready", function() {
   // set the servo to the minimum degrees
   // defaults to 0
   //
-   servo.min();
+   servo.min(80);
 
    //max()
   //
   // set the servo to the maximum degrees
   // defaults to 180
   //
-   servo.max();
+   servo.max(100);
 
   // center()
   //
