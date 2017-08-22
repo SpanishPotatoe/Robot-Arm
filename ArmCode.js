@@ -79,6 +79,8 @@ board.on("ready", function() {
 
 });
 
+servo.sweep()
+
 board.on("ready", function() {
 
   // Create a new `joystick` hardware instance.
@@ -95,7 +97,7 @@ board.on("ready", function() {
   });
 });
 
- function ServoMove() {
+ /* function ServoMove() {
 
    if (this.x > 0){
      servo.sweep()
