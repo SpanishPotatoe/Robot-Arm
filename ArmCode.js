@@ -107,8 +107,6 @@ board.on("ready", function() {
 
 });
 
-board = new five.Board();
-
 board.on("ready", function() {
   // Create a new `motor` hardware instance.
   motor = new five.Motor({
