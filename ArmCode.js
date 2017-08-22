@@ -79,25 +79,29 @@ board.on("ready", function() {
 
 });
 
+var five = require("johnny-five");
+var board = new five.Board();
 
-var five = require("johnny-five"),
-  button, led;
+board.on("ready", function() {
 
-five.Board().on("ready", function() {
-
-  button = new five.Button({
-    pin: 2,
-    isPullup: true
+  // Create a new `joystick` hardware instance.
+  var joystick = new five.Joystick({
+    //   [ x, y ]
+    pins: ["A0", "A1"]
   });
 
-  led = new five.Led(13);
-
-  button.on("down", function(value) {
-    led.on();
+  joystick.on("change", function() {
+    console.log("Joystick");
+    console.log("  x : ", this.x);
+    console.log("  y : ", this.y);
+    console.log("--------------------------------------");
   });
-
-  button.on("up", function() {
-    led.off();
-  });
-
 });
+
+ function ServoMove() {
+
+   if (this.x > 0){
+     servo.step(20)
+   }
+
+ }
