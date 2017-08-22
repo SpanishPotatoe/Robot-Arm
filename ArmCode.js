@@ -42,7 +42,7 @@ board.on("ready", function() {
     console.log("start", Date.now());
 
     // Demonstrate motor stop in 2 seconds
-    board.wait(2000, function() {
+    board.wait(10000, function() {
       motor.stop();
     });
   });
