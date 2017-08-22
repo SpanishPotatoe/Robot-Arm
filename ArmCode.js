@@ -64,3 +64,5 @@ board.on("ready", function() {
   // stop()
   // Stop the motor. `isOn` property set to |false|
 });
+
+isOn = true
