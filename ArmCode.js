@@ -104,6 +104,6 @@ board.on("ready", function() {
       servo.sweep();
     }
 
-  };
+  }
 
 });
