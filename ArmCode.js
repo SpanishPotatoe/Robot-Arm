@@ -40,7 +40,7 @@ board.on("ready", function() {
       }
 
       if(this.x <= -0.5){
-        servo.to(155);
+        servo.step(-1);
       }
 
   });
@@ -58,7 +58,7 @@ board.on("ready", function() {
     range: [55,155],    // Default: 0-180
     fps: 100,          // Used to calculate rate of movement between positions
     invert: false,     // Invert all specified positions
-    startAt: 90,       // Immediately move to a degree
+    startAt: 95,       // Immediately move to a degree
     center: true,      // overrides startAt if true and moves the servo to the center of the range
   });
 
