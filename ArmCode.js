@@ -54,7 +54,7 @@ board.on("ready", function() {
   // Takes an optional parameter `speed` [0-255]
   // to define the motor speed if a PWM Pin is
   // used to connect the motor.
-  motor.start(100);
+  motor.start(75);
 
   // stop()
   // Stop the motor. `isOn` property set to |false|
