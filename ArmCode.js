@@ -99,9 +99,9 @@ board.on("ready", function() {
   function ServoMove() {
 
     if (this.x = 0){
-      servo.sweep();
+      servo.step(20);
     } else {
-      servo.to(90);
+      servo.sweep();
     }
 
   };
