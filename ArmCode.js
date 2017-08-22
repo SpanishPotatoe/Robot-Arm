@@ -17,31 +17,10 @@
 // 2 Motor, 1 servo's, 1 joystick
 
 
-// Board setup
+var five = require("johnny-five"),
+  board, motor, led;
 
-var five = require("johnny-five");
-var board = new five.Board();
-
-// Joystick function
-board.on("ready", function() {
-
-  // Create a new `joystick` hardware instance.
-  var joystick = new five.Joystick({
-    //   [ x, y ]
-    pins: ["A0", "A1"]
-  });
-
-  joystick.on("change", function() {
-    console.log("Joystick");
-    console.log("  x : ", this.x);
-    console.log("  y : ", this.y);
-    console.log("--------------------------------------");
-  });
-});
-
-
-
-
+board = new five.Board();
 
 board.on("ready", function() {
   // Create a new `motor` hardware instance.
@@ -85,5 +64,6 @@ board.on("ready", function() {
   // stop()
   // Stop the motor. `isOn` property set to |false|
 });
+
 
 isOn = true
