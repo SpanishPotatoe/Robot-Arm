@@ -95,6 +95,6 @@ board.on("ready", function() {
   //
   // eg. array.step( -20 );
 
-});
+servo.sweep();
 
-  servo.sweep();
+});
