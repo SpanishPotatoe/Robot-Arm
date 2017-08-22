@@ -34,6 +34,13 @@ board.on("ready", function() {
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
+
+      if(this.x = 0){
+        servo.step(20);
+      } else {
+        servo.sweep();
+      }
+
   });
 
 
@@ -94,6 +101,6 @@ board.on("ready", function() {
   //
   // eg. array.step( -20 );
 
-  servo.sweep();
+
 
 });
