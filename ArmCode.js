@@ -35,8 +35,7 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-      if(this.x > 0){
-      } else {
+      if(this.x <= 0){
         servo.sweep();
       }
 
