@@ -96,7 +96,7 @@ board.on("ready", function() {
 
 
 
-  function ServoMove() {
+  function ServoMove("change") {
 
     if (this.x = 0){
       servo.step(20);
