@@ -40,6 +40,7 @@ board.on("ready", function() {
   // "start" events fire when the motor is started.
   motor.on("start", function() {
     console.log("start", Date.now());
+    speed(20);
   });
 
   // "stop" events fire when the motor is stopped.
