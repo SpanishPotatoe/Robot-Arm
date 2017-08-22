@@ -37,6 +37,8 @@ board.on("ready", function() {
 
       if(this.x <= 0){
         servo.to(+75);
+      } else {
+        servo.to(55);
       }
 
   });
