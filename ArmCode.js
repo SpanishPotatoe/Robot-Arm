@@ -43,10 +43,7 @@ board.on("ready", function() {
         servo.to(155);
       }
 
-      if(this.x == 0){
-        servo.to(90);
-      }
-
+  
   });
 
 
