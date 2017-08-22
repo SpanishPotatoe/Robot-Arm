@@ -44,7 +44,7 @@ board.on("ready", function() {
       }
 
       if(this.x < 0.5 && this.x > -0.5){
-        servo.to(90);
+        servo.to(95);
       }
 
   });
