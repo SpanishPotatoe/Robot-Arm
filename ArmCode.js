@@ -45,19 +45,19 @@ board.on("ready", function() {
 
   // Servo API
 
-   min(20)
+   //min()
   //
   // set the servo to the minimum degrees
   // defaults to 0
   //
-  // eg. servo.min();
+   servo.min(20);
 
-   max(160)
+   //max()
   //
   // set the servo to the maximum degrees
   // defaults to 180
   //
-  // eg. servo.max();
+   servo.max(160);
 
   // center()
   //
