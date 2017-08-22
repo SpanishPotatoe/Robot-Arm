@@ -36,7 +36,7 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
       if(this.x >= 0.5){
-        servo.step(-55);
+        servo.step(-1);
       }
 
       if(this.x <= -0.5){
