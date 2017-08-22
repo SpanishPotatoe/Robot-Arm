@@ -36,8 +36,8 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
       if(this.x > 0){
-        servo.step(20);
-      } 
+        servo.step(50);
+      }
   });
 
 
