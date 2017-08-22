@@ -35,10 +35,16 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-      if(this.x <= 0.5){
-        servo.to(+75);
-      } else {
+      if(this.x >= 0.5){
         servo.to(55);
+      } else {
+        servo.to(95);
+      }
+
+      if(this.x <= -0.5){
+        servo.to(155);
+      } else {
+        servo.to(95);
       }
 
   });
