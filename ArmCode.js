@@ -79,9 +79,6 @@ board.on("ready", function() {
 
 });
 
-var five = require("johnny-five");
-var board = new five.Board();
-
 board.on("ready", function() {
 
   // Create a new `joystick` hardware instance.
