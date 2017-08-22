@@ -95,14 +95,6 @@ board.on("ready", function() {
   //
   // eg. array.step( -20 );
 
-  function ServoMove() {
-
-    if (this.x > 0){
-      servo.sweep();
-    } else {
-      servo.to(90);
-    }
-
-  };
-
 });
+
+  servo.sweep();
