@@ -5,6 +5,8 @@ var ServoArray = [turnservo,"Eat Grass", 18];
 
 console.log( "I WORK!");
 
+turnservo();
+
 }
 
 
