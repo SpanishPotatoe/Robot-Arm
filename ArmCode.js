@@ -37,7 +37,7 @@ board.on("ready", function() {
 
     var ServoArray = [ Servoleftright()];
 
-    while( this.y >= 0.5){
+    if ( this.y >= 0.5){
 
       ServoArray[0]
 
