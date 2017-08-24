@@ -37,7 +37,7 @@ board.on("ready", function() {
 
 
 
-  }
+  },
 
   if (this.x >= 0.5){
   servo.to(155);
@@ -49,7 +49,7 @@ board.on("ready", function() {
 
   if (this.x <= -0.5){
   servo.to(75);
-  }
+}
 
 
 
