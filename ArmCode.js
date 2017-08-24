@@ -35,6 +35,13 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
+    var ServoArray = [ Servoleftright()];
+
+    while( this.y >= 0.5){
+
+      ServoArray[0]
+
+    }
 
 
       if (this.x >= 0.5){
@@ -48,6 +55,7 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.to(155);
       }
+
 
 
 
