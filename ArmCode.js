@@ -34,11 +34,10 @@ board.on("ready", function() {
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
-
-
-
   },
 
+
+function {
   if (this.x >= 0.5){
   servo.to(155);
   }
@@ -51,9 +50,7 @@ board.on("ready", function() {
   servo.to(75);
 }
 
-
-
-
+}
 
 
 );
