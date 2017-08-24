@@ -54,7 +54,10 @@ board.on("ready", function() {
 
 
 
-  });
+  }){
+
+    
+  };
 
   // Create a new 'servo' hardware instance
   var servo = new five.Servo(10);
