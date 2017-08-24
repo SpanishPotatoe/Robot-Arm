@@ -1,3 +1,15 @@
+
 var ServoArray = ["I like pie", "Eat Grass", 18];
 
-console.log(ServoArray[1]);
+
+
+var turnServo = function(){
+
+  if (){
+
+  }
+
+}
+
+
+console.log(ServoArray[2]);
