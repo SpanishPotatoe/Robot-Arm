@@ -37,28 +37,29 @@ board.on("ready", function() {
 
 
 
- while(this.y >= 0.5) {
    Servoleftright();
-}
 
 
-    function Servoleftright(){
-
-      if (this.x >= 0.5){
-      servo.to(55);
-      }
-
-      if (this.x <= 0.5 && this.x >= -0.5){
-      servo.to(95);
-      }
-
-      if (this.x <= -0.5){
-      servo.to(155);
-      }
-    }
 
 
   });
+
+
+  function Servoleftright(){
+
+    if (this.x >= 0.5){
+    servo.to(55);
+    }
+
+    if (this.x <= 0.5 && this.x >= -0.5){
+    servo.to(95);
+    }
+
+    if (this.x <= -0.5){
+    servo.to(155);
+    }
+  }
+
 
 
   // Create a new 'servo' hardware instance
