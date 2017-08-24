@@ -35,17 +35,23 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
+
+    
+
+
+
+      if (this.x >= 0.5){
+      servo.step(-2);
+      }
+
+      if (this.x <= -0.5){
+      servo.step(2);
+      }
+
+
+
+
   });
-
-  if (this.x >= 0.5){
-  servo.step(-2);
-  }
-
-  if (this.x <= -0.5){
-  servo.step(2);
-  }
-  
-
 
 
   // Create a new 'servo' hardware instance
