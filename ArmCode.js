@@ -49,6 +49,7 @@ board.on("ready", function() {
       }
     }
 
+console.log(ServoArray[0]);
 
 
     if (this.y >= 0.5){
