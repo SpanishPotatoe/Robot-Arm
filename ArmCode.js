@@ -38,7 +38,7 @@ board.on("ready", function() {
 
     var ServoArray = [ turnServo() ];
 
-    function tur(){
+    function turnServo(){
 
       if (this.x >= 0.5){
       servo.step(-2);
