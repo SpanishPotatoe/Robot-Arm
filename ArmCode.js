@@ -36,10 +36,6 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
 
-    var ServoArray = [ turnServo, 'eatapie' ];
-
-    var turnServo = function(){
-
       if (this.x >= 0.5){
       servo.step(-2);
       }
@@ -47,18 +43,6 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.step(2);
       }
-    }
-
-console.log(ServoArray[0]);
-
-
-    if (this.y >= 0.5){
-      ServoArray[0]
-    }
-
-    if (this.y <= -0.5){
-
-    }
 
   });
 
