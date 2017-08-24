@@ -36,21 +36,7 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
 
-    var ServoArray = [
-      turnServo
-
-
-
-
-
-
-
-    ]
-
-
-
-
-
+    var ServoArray = [ turnServo ]
 
     var turnServo = function(){
 
@@ -61,6 +47,14 @@ board.on("ready", function() {
       if (this.x <= -0.5){
         servo.step(2);
       }
+    }
+
+    if (this.y >= 0.5){
+      ServoArray (0);
+    }
+
+    if (this.y <= -0.5){
+
     }
 
   });
