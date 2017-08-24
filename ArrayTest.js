@@ -3,7 +3,7 @@ var ServoArray = [turnServo, "Eat Grass", 18];
 
 
 
-var turnServo = function(){
+function turnServo(){
 
 console.log("I WORK!");
 
