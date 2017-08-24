@@ -35,13 +35,6 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-
-
-   Servoleftright();
-
-
-
-
   });
 
 
@@ -60,6 +53,7 @@ board.on("ready", function() {
     }
   }
 
+Servoleftright();
 
 
   // Create a new 'servo' hardware instance
