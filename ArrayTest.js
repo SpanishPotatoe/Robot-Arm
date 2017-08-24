@@ -1,7 +1,9 @@
 
 var ServoArray = [turnservo,"Eat Grass", 18];
 
-  turnservo: function(){
+  function turnservo(){
+
+console.log( ServoArray [1 + 2]);
 
 }
 
