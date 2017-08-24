@@ -37,7 +37,10 @@ board.on("ready", function() {
 
 
 
- Servoleftright();
+ while(this.y >= 0.5) {
+   Servoleftright();
+}
+
 
     function Servoleftright(){
 
