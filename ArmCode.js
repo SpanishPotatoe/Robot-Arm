@@ -36,9 +36,6 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
 
-    var ServoArray = [ turnServo() ];
-
-      ServoArray[0]
 
 
     function turnServo(){
@@ -51,6 +48,8 @@ board.on("ready", function() {
       servo.step(2);
       }
     }
+
+turnServo();
 
   });
 
