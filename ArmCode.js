@@ -44,7 +44,7 @@ board.on("ready", function() {
   if (this.x <= -0.5){
   servo.step(2);
   }
-  }
+  
 
 
 
