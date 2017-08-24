@@ -37,12 +37,16 @@ board.on("ready", function() {
 
 
 
-      while (this.x >= 0.5){
-      servo.step(-2);
+      if (this.x >= 0.5){
+      servo.to(155);
       }
 
-      while (this.x <= -0.5){
-      servo.step(2);
+      if (this.x <= 0.5 && this.x >= -0.5){
+      servo.to(95);
+      }
+
+      if (this.x <= -0.5){
+      servo.to(55);
       }
 
 
