@@ -35,23 +35,25 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
+
+    function Servoleftright(){
+
+      if (this.x >= 0.5){
+      servo.to(55);
+      }
+
+      if (this.x <= 0.5 && this.x >= -0.5){
+      servo.to(95);
+      }
+
+      if (this.x <= -0.5){
+      servo.to(155);
+      }
+    }
+
+
   });
 
-
-  function Servoleftright(){
-
-    if (this.x >= 0.5){
-    servo.to(55);
-    }
-
-    if (this.x <= 0.5 && this.x >= -0.5){
-    servo.to(95);
-    }
-
-    if (this.x <= -0.5){
-    servo.to(155);
-    }
-  }
 
 Servoleftright();
 
