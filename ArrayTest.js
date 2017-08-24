@@ -1,15 +1,11 @@
 
-var ServoArray = [
+var ServoArray = [turnservo,"Eat Grass", 18];
 
-  function turnServo(){
+  turnservo: function(){
 
-  console.log( ServoArray [1 + 2])
+console.log( ServoArray [1 + 2])
 
-},
-
-"Eat Grass", 18];
-
-
+}
 
 
 
