@@ -35,9 +35,6 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-
-    function Servoleftright(){
-
       if (this.x >= 0.5){
       servo.to(55);
       }
@@ -49,13 +46,11 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.to(155);
       }
-    }
-
 
   });
 
 
-Servoleftright();
+
 
 
   // Create a new 'servo' hardware instance
