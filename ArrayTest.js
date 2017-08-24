@@ -1,7 +1,13 @@
 
-var ServoArray = ["I like pie", "Eat Grass", 18];
+var ServoArray = [turnServo, "Eat Grass", 18];
 
 
 
+var turnServo = function(){
 
-console.log(ServoArray[2]);
+console.log("I WORK!");
+
+}
+
+
+console.log(ServoArray[0]);
