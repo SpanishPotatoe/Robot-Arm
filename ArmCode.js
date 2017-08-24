@@ -37,9 +37,6 @@ board.on("ready", function() {
 
 
 
-
-    function turnServo(){
-
       if (this.x >= 0.5){
       servo.step(-2);
       }
@@ -47,9 +44,9 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.step(2);
       }
-    }
+  }
 
-turnServo();
+
 
   });
 
