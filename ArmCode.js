@@ -35,10 +35,7 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-
-    
-
-
+    function turnServo(){
 
       if (this.x >= 0.5){
       servo.step(-2);
@@ -47,11 +44,13 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.step(2);
       }
-
-
-
+    }
 
   });
+
+var ServoArray = [ turnServo() ];
+
+  ServoArray [0]
 
 
   // Create a new 'servo' hardware instance
