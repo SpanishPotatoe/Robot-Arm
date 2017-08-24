@@ -45,7 +45,7 @@ board.on("ready", function() {
 
 
 
-    }
+    ]
 
 
 
