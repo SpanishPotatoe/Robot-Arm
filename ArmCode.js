@@ -36,7 +36,7 @@ board.on("ready", function() {
     console.log("--------------------------------------");
 
 
-    var ServoArray = [ turnServo ]
+    var ServoArray = [ turnServo ];
 
     var turnServo = function(){
 
