@@ -9,5 +9,4 @@ console.log("I WORK!");
 
 }
 
-
 console.log(ServoArray[0]);
