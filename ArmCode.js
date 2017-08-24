@@ -44,6 +44,8 @@ board.on("ready", function() {
     }
 
 
+    function Servoleftright(){
+
       if (this.x >= 0.5){
       servo.to(55);
       }
@@ -55,8 +57,7 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.to(155);
       }
-
-
+    }
 
 
   });
