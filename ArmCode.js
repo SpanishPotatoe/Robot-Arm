@@ -34,26 +34,21 @@ board.on("ready", function() {
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
-  },
 
 
-function {
-  if (this.x >= 0.5){
-  servo.to(155);
-  }
 
-  if (this.x <= 0.5 && this.x >= -0.5){
-  servo.to(115);
-  }
+      if (this.x >= 0.5){
+      servo.to(155);
+      }
 
-  if (this.x <= -0.5){
-  servo.to(75);
-}
+      if (this.x <= 0.5 && this.x >= -0.5){
+      servo.to(115);
+      }
 
-}
-
-
-);
+      if (this.x <= -0.5){
+      servo.to(75);
+      }
+  });
 
   // Create a new 'servo' hardware instance
   var servo = new five.Servo(10);
