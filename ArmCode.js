@@ -52,16 +52,12 @@ board.on("ready", function() {
 
 
     if (this.y >= 0.5){
-      ServoArray[0];
+      ServoArray[0]
     }
 
     if (this.y <= -0.5){
 
     }
-
-
-  }
-
 
   });
 
