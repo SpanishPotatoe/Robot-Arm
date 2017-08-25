@@ -35,10 +35,10 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-    var LeftRight = require ('./ServoArray')
+    var ServoArray = require ('./ServoArray')
 
       if (this.y >= 0.5){
-        LeftRight();
+        ServoArray[0];
       }
 
 

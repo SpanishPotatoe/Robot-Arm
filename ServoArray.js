@@ -3,9 +3,7 @@
 // NOT JOHNNY-FIVE, ADDED FOR PROGRAMMING PURPOSE
 
 
-
-
-    function LeftRight(){
+var ServoArray = [
 
     if (this.x >= 0.5){
       servo.to(155);
@@ -17,12 +15,11 @@
 
     if (this.x <= -0.5){
       servo.to(75);
-      }
+    },
 
-      console.log("Message received")
-
-    };
+    "Message Received"  ]
 
 
 
-module.exports = LeftRight;
+
+module.exports = ServoArray;
