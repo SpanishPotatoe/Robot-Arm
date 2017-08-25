@@ -21,4 +21,4 @@
     };
 
 
-module.exports = ServoArray;
+module.exports = LeftRight;
