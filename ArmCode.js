@@ -35,6 +35,7 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
+    var ServoArray = 1
 
     do{
 
@@ -49,7 +50,7 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.to(75);
       }
-    } while (1=1);
+    } while (ServoArray = 1);
 
   });
 
