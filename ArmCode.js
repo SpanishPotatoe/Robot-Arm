@@ -46,7 +46,9 @@ board.on("ready", function() {
 
 }
 
-ServoX();
+while (true) {
+  ServoX();
+}
 
   });
 
