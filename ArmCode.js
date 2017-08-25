@@ -38,7 +38,7 @@ board.on("ready", function() {
     var ServoArray = require ('./ServoArray')
 
       if (this.y >= 0.5){
-        console.log(ServoArray[1]);
+        return ServoArray[0];
       }
 
 
