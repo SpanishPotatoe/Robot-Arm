@@ -38,11 +38,11 @@ board.on("ready", function() {
 
 
       if (this.y >= 0.5){
-      ServoArray.ServoArray[0];
+        return.ServoArray
       }
 
 
-      
+
   });
 
   // Create a new 'servo' hardware instance
