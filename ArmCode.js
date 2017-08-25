@@ -29,7 +29,7 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
-  joystick.on("change", function() {
+  joystick.on("change", function(array) {
     console.log("Joystick");
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
