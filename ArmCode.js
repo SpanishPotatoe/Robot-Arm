@@ -38,7 +38,7 @@ board.on("ready", function() {
 
 
       if (this.y >= 0.5){
-        ServoArray
+        return ServoArray
       }
 
 
