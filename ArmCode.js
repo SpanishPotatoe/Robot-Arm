@@ -39,16 +39,13 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray')
 
-  function ServoX(){
+  {
     if (this.x >= 0.5){
       servo.to(155);
     }
 
 }
 
-while (true) {
-  ServoX();
-}
 
   });
 
