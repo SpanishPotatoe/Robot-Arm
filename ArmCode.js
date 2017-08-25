@@ -29,7 +29,7 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
-  joystick.on("change", function() {
+  joystick.on("change", function(function) {
     console.log("Joystick");
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
@@ -40,7 +40,7 @@ board.on("ready", function() {
     var ServoArray = require ('./ServoArray');
 
     if (this.y >= 0.5){
-      console.log(ServoArray[0]);
+        ServoArray(ServoArray());
     }
 
 
