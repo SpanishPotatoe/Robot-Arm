@@ -3,7 +3,7 @@
 // NOT JOHNNY-FIVE, ADDED FOR PROGRAMMING PURPOSE
 
 
-//var ServoArray = [  "Message Received", 10, LeftRight() ]
+var ServoArray = [  "Message Received", 10, LeftRight() ]
 
 
       if (this.x >= 0.5){
