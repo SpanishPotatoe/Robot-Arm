@@ -25,4 +25,4 @@ ServoArray [ LeftRight() ]
     }
 
 
-module.export = ServoArray;
+module.exports = ServoArray;
