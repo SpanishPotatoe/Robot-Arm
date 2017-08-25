@@ -3,12 +3,13 @@
 // NOT JOHNNY-FIVE, ADDED FOR PROGRAMMING PURPOSE
 
 
-  function LeftRight(){
+var ServoArray = [  "Message Received", 10 ]
 
-  if (this.x >= 0.5){
-    console.log("X IS MAXED");
+
+
+  if (this.y >= 0.5){
+    console.log(ServoArray[1]);
   }
 
-};
 
-module.exports = ServoArray,
+module.exports = ServoArray;
