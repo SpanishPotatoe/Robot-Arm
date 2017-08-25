@@ -44,9 +44,9 @@ board.on("ready", function() {
       servo.to(155);
     }
 
+}
 
-      ServoX();
-
+ServoX();
 
   });
 
