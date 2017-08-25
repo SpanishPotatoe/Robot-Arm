@@ -43,6 +43,8 @@ board.on("ready", function() {
       console.log(ServoArray[0]);
     }
 
+
+
   });
 
   // Create a new 'servo' hardware instance
