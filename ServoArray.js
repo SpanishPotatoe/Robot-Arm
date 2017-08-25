@@ -5,7 +5,7 @@
 
 //var ServoArray = [  "Message Received", 10, LeftRight() ]
 
-var ServoArray = {
+
       if (this.x >= 0.5){
       servo.to(155)
     }
@@ -17,7 +17,17 @@ var ServoArray = {
     if (this.x <= -0.5){
       servo.to(55)
     }
+
+
+
+module.exports = if (this.x >= 0.5){
+servo.to(155)
 }
 
+if (this.x <= 0.5 && this.x >= -0.5){
+servo.to(105)
+}
 
-module.exports = ServoArray;
+if (this.x <= -0.5){
+servo.to(55)
+};
