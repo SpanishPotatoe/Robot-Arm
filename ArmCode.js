@@ -35,7 +35,7 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-
+    do{
 
       if (this.x >= 0.5){
       servo.to(155);
@@ -48,6 +48,8 @@ board.on("ready", function() {
       if (this.x <= -0.5){
       servo.to(75);
       }
+    }
+
   });
 
   // Create a new 'servo' hardware instance
