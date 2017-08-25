@@ -39,12 +39,10 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray')
 
-      if (this.y >= 0.5){
-        if (this.x >= 0.5){
-          servo.to(155);
-        }
-      }
+  var ServoX =  if (this.x >= 0.5){
+      servo.to(155);
 
+return ServoX;
 
 
   });
