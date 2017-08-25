@@ -46,7 +46,7 @@ board.on("ready", function() {
       ServoArray[0];
     }
 
-    if (this.x <= 0.5 && >= -0.5){
+    if (this.x <= 0.5 && this.x >= -0.5){
       ServoArray[2];
     }
 
