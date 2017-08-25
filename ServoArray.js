@@ -3,10 +3,8 @@
 // NOT JOHNNY-FIVE, ADDED FOR PROGRAMMING PURPOSE
 
 
-var ServoArray = [  "Message Received", 10, LeftRight() ]
+//var ServoArray = [  "Message Received", 10, LeftRight() ]
 
-
-    function LeftRight(){
 
       if (this.x >= 0.5){
       servo.to(155)
@@ -20,6 +18,6 @@ var ServoArray = [  "Message Received", 10, LeftRight() ]
       servo.to(55)
     }
 
-  }
+
 
 module.exports = ServoArray;
