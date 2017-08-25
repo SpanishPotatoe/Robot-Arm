@@ -18,7 +18,11 @@
     if (this.x <= -0.5){
       servo.to(75);
       }
+
+      console.log("Message received")
+
     };
+
 
 
 module.exports = LeftRight;
