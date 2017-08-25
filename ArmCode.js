@@ -41,11 +41,12 @@ board.on("ready", function() {
 
     var ServoArray = [  "Message Received", 10,
 
-    {  if (this.x >= 0.5){
+      if (this.x >= 0.5){
         servo.to(155);
       }
-    }
+
        ]
+
 
     if (this.y >= 0.5){
       ServoArray[1];
