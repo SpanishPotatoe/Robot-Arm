@@ -37,7 +37,7 @@ board.on("ready", function() {
 
 
 
-    //var ServoArray = require ('./ServoArray')
+    var ServoArray = require ('./ServoArray');
 
     var ServoArray = [ servo.to(155), servo.to(55), servo.to(115) ]
 
