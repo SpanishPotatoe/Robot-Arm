@@ -39,17 +39,15 @@ board.on("ready", function() {
 
     //var ServoArray = require ('./ServoArray')
 
-    var ServoArray = [  "Message Received", 10,
-
-    {  if (){
-        servo.to(155);
-      }
-}
-       ]
+    var ServoArray = [ servo.to(155),servo.to(55) ]
 
 
     if (this.y >= 0.5){
-      ServoArray[2];
+      ServoArray[0];
+    }
+
+    if (this.y <= -0.5){
+      ServoArray[1];
     }
 
 
