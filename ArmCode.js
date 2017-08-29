@@ -155,8 +155,6 @@ board.on("ready", function() {
     // can now be written as:
     //lcd.print("I :heart: johnny-five");
 
-    });
-
     this.repl.inject({
       lcd: lcd
     });
