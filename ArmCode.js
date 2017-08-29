@@ -41,6 +41,8 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
+    var leftright = false
+
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
@@ -48,8 +50,6 @@ board.on("ready", function() {
 
       var leftright = true
 
-    }else {
-      var leftright = false
     }
 
     if ( leftright = true ){
