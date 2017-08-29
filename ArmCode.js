@@ -45,7 +45,7 @@ board.on("ready", function() {
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      const LeftRight = (ServoArray[0]);
+      Object.Create(ServoArray[0]);
     }
 
     if ( leftright = true ){
