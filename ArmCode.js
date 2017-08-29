@@ -151,7 +151,7 @@ board.on("ready", function() {
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
     // can now be written as:
-    //lcd.print("I :heart: johnny-five");
+    lcd.print("I :heart: johnny-five");
 
 
     this.repl.inject({
