@@ -65,8 +65,8 @@ board.on("ready", function() {
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
 
-  
 
+  }
 
 
   });
