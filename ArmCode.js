@@ -46,7 +46,7 @@ board.on("ready", function() {
     }
 
     if (this.x >= 0.5){
-    servo.to(155)
+    servo.to(65)
   }
 
   if (this.x <= 0.5 && this.x >= -0.5){
@@ -54,7 +54,7 @@ board.on("ready", function() {
   }
 
   if (this.x <= -0.5){
-    servo.to(55)
+    servo.to(155)
   }
 
 
@@ -149,7 +149,7 @@ board.on("ready", function() {
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
     // can now be written as:
-    lcd.print("I :heart: johnny-five");
+    //lcd.print("I :heart: johnny-five");
 
     this.wait(4000, function() {
       lcd.clear().cursor(0, 0).print("Have a good day! :)");
