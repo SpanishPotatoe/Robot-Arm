@@ -49,10 +49,6 @@ board.on("ready", function() {
       var LeftRight = true
     }
 
-    if (this.y <= -0.75){
-      var LeftRight = false
-    }
-
 
     if ( LeftRight == true ){
 
