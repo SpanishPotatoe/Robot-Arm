@@ -48,7 +48,6 @@ board.on("ready", function() {
 
     }
 
-  }
 
   if (this.y <= -0.5){
     lcd.clear().print("Servo Mode : ");
