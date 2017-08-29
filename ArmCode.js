@@ -42,7 +42,6 @@ joystick.on("change", function() {
     lcd.cursor(1, 0);
     servoMode = 'FSB'
     lcd.print("Full Swing Back");
-    //lcd.print(servoMode);
   }
   //Handle joystick down
   if (joystickPosition == "down"){
@@ -51,7 +50,6 @@ joystick.on("change", function() {
     lcd.cursor(1, 0);
     servoMode = 'IH'
     lcd.print("Incremental hold");
-    //lcd.print(servoMode);
   }
   //Handle joystick center
   if (joystickPosition == "center"){
