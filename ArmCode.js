@@ -31,7 +31,7 @@ joystick.on("change", function() {
   if (Math.round(this.y) == 0 && Math.round(this.x) == 0){ joystickPosition = "center"}
   if ((Math.round(this.x * 100) / 100) <= -0.5 )         { joystickPosition = "rt"    }
   if ((Math.round(this.y * 100) / 100) <= -0.75)         { joystickPosition = "up"  }
-  console.log("Joystick");
+  console.log("Joystick", servoMode);
   console.log("  x : ", this.x);
   console.log("  y : ", this.y);
   console.log("--------------------------------------");
@@ -41,8 +41,8 @@ joystick.on("change", function() {
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     servoMode = 'FSB'
-    //lcd.print("Full Swing Back");
-    lcd.print(servoMode);
+    lcd.print("Full Swing Back");
+    //lcd.print(servoMode);
   }
   //Handle joystick down
   if (joystickPosition == "down"){
@@ -50,8 +50,8 @@ joystick.on("change", function() {
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     servoMode = 'IH'
-    //lcd.print("Incremental hold");
-    lcd.print(servoMode);
+    lcd.print("Incremental hold");
+    //lcd.print(servoMode);
   }
   //Handle joystick center
   if (joystickPosition == "center"){
