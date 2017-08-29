@@ -53,9 +53,6 @@ board.on("ready", function() {
       var leftRight = 1
     }
 
-
-
-
     if ( leftRight == 1 ){
 
       if (this.x >= 0.5){
@@ -79,6 +76,11 @@ board.on("ready", function() {
     lcd.print("Turn Degree");
 
   }
+
+  if (this.y <= 0.75){
+    var leftRight = 0
+  }
+
 console.log(leftRight);
 
   });
