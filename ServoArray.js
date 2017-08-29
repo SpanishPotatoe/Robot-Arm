@@ -1,10 +1,7 @@
 
 
-var ServoArray = [ leftright , 10 ]
-
-  var leftright = true
-
-/*
+var ServoArray =
+ 
       if (this.x >= 0.5){
       servo.to(155)
     }
@@ -16,7 +13,7 @@ var ServoArray = [ leftright , 10 ]
     if (this.x <= -0.5){
       servo.to(55)
     }
-*/
+
 
 
 module.exports = ServoArray;
