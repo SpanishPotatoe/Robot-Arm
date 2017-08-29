@@ -48,7 +48,7 @@ board.on("ready", function() {
       Object.create(ServoArray[0]);
     }
 
-    if ( 'LeftRight' = true ){
+    if ( LeftRight = true ){
 
       if (this.x >= 0.5){
       servo.to(155)
