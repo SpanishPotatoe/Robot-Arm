@@ -40,16 +40,18 @@ joystick.on("change", function() {
     //enter servo mode : full swing back
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
-    lcd.print("Full Swing Back");
     servoMode = 'FSB'
+    //lcd.print("Full Swing Back");
+    lcd.print(servoMode);
   }
   //Handle joystick down
   if (joystickPosition == "down"){
     //enter servo mode : Incremental hold
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
-    lcd.print("Incremental hold");
     servoMode = 'IH'
+    //lcd.print("Incremental hold");
+    lcd.print(servoMode);
   }
   //Handle joystick center
   if (joystickPosition == "center"){
@@ -117,7 +119,7 @@ console.log(joystickPosition);
     fps: 100,          // Used to calculate rate of movement between positions
     invert: false,     // Invert all specified positions
     startAt: 95,       // Immediately move to a degree
-    center: false,      // overrides startAt if true and moves the servo to the center of the range
+    center: true,      // overrides startAt if true and moves the servo to the center of the range
   });
   // Add servo to REPL (optional)
   this.repl.inject({
