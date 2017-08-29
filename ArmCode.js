@@ -50,7 +50,7 @@ board.on("ready", function() {
 
     }
 
-    if ( lcd.print = "Left Right" ){
+    if ( lcd = "Left Right" ){
 
       if (this.x >= 0.5){
       servo.to(70)
