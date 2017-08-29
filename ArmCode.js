@@ -22,8 +22,6 @@ var five = require("johnny-five"),
 
 var board = new five.Board();
 
-var leftRight = 0
-
 board.on("ready", function() {
 
   // Create a new `joystick` hardware instance.
@@ -49,7 +47,7 @@ board.on("ready", function() {
 
     }
 
-
+    var leftRight = 0
 
     if ( leftRight = 1 ){
 
