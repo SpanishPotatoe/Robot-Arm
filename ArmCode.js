@@ -51,7 +51,7 @@ board.on("ready", function() {
     if ( leftright = true ){
 
       if (this.x >= 0.5){
-      servo.to(155)
+      servo.to(65)
     }
 
     if (this.x <= 0.5 && this.x >= -0.5){
@@ -59,7 +59,7 @@ board.on("ready", function() {
     }
 
     if (this.x <= -0.5){
-      servo.to(65)
+      servo.to(155)
     }
   }
 
