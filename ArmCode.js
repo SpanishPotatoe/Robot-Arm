@@ -30,6 +30,8 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
+var LeftRight = 'Servo'.split('');
+
   joystick.on("change", function() {
     console.log("Joystick");
     console.log("  x : ", this.x);
@@ -40,7 +42,7 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var LeftRight = 'Servo'.split('');
+
 
 function  Servostring(){
   LeftRight.shift();
