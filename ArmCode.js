@@ -45,16 +45,19 @@ board.on("ready", function() {
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-
     }
+
+    if (lcd.print("Left Right")= true){
+      console.log("YEAHH BOII!");
+    }
+
+
 
 
   if (this.y <= -0.5){
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
-
-
   }
 
 
