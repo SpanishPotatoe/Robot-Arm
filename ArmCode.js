@@ -84,7 +84,7 @@ function  Servostring1(){
     Servostring2();
   }
 
-  if ( LeftRight == '1' ){
+  if ( LeftRight[0] == '1' ){
 
     if (this.x >= 0.5){
     servo.step(-2);
