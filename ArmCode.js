@@ -42,7 +42,7 @@ board.on("ready", function() {
 
     var LeftRight = 'Servo'.split('');
 
-function  Servostring(); {
+function  Servostring(){
   LeftRight.shift();
 }
 
