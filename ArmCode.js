@@ -44,7 +44,7 @@ var LeftRight = '1'.split('');
 
 
 
-function  Servostring(){
+function  Servostring1(){
   LeftRight.shift();
 }
 
@@ -53,7 +53,7 @@ function  Servostring(){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      Servostring();
+      Servostring1();
     }
 
 
@@ -73,13 +73,26 @@ function  Servostring(){
     }
   }
 
-
+  function  Servostring2(){
+    LeftRight.unshift('1');
 
   if (this.y <= -0.75){
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
+    Servostring2();
   }
+
+  if ( LeftRight == '1' ){
+
+    if (this.x >= 0.5){
+    servo.step(-2);
+  }
+
+  if (this.x <= -0.5){
+    servo.step(+2);
+  }
+}
 
 console.log(LeftRight);
 
