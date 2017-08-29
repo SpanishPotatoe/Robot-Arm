@@ -18,7 +18,7 @@ var cheese = .75
 
   function JoystickToggle(){
     if (cheese >= .75 ){
-      Object.create(value1);
+      object.create(value1);
     }
 
     console.log(JoystickToggle());
