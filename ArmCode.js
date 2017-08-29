@@ -42,7 +42,7 @@ board.on("ready", function() {
 
     var leftRight
 
-    if ( this.y >= 0){
+    if ( ServoArray[0]= true){
       var leftRight = 1
     }
 
@@ -50,7 +50,7 @@ board.on("ready", function() {
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      var leftRight = 1
+      return ServoArray[0];
     }
 
 
