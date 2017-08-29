@@ -75,7 +75,7 @@ board.on("ready", function() {
     lcd.print("Turn Degree");
 
   }
-console.log(leftright);
+console.log(leftRight);
 
   });
 
