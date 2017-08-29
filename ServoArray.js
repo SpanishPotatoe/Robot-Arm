@@ -1,21 +1,14 @@
 
 
-var ServoArray = [ 'Message Received' , 10 ]
+var ServoArray = [ Servostring1() , Servostring2() ]
 
 
-/*
-      if (this.x >= 0.5){
-      servo.to(155)
-    }
+function  Servostring1(){
+  LeftRight.shift();
+}
 
-    if (this.x <= 0.5 && this.x >= -0.5){
-      servo.to(105)
-    }
-
-    if (this.x <= -0.5){
-      servo.to(55)
-    }
-*/
-
+function  Servostring2(){
+  LeftRight.unshift('1');
+}
 
 module.exports = ServoArray;
