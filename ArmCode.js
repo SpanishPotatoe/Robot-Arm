@@ -46,10 +46,9 @@ board.on("ready", function() {
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      var leftRight = 1
-    }else{
-      var leftRight = 1
+      var leftRight == 1
     }
+
 
 
 
