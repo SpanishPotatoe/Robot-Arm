@@ -59,7 +59,7 @@ joystick.on("change", function() {
       servo.step(+2);
     }
   }
-console.log(LeftRight);
+console.log(joystickPosition);
 });
   // Create a new 'servo' hardware instance
   var servo = new five.Servo(5);
