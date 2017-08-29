@@ -45,6 +45,18 @@ board.on("ready", function() {
       console.log(ServoArray[0]);
     }
 
+    if (this.x >= 0.5){
+    servo.to(155)
+  }
+
+  if (this.x <= 0.5 && this.x >= -0.5){
+    servo.to(105)
+  }
+
+  if (this.x <= -0.5){
+    servo.to(55)
+  }
+
 
 
   });
@@ -128,12 +140,10 @@ board.on("ready", function() {
     });
 
     // Tell the LCD you will use these characters:
-    lcd.useChar("check");
     lcd.useChar("heart");
-    lcd.useChar("duck");
 
     // Line 1: Hi rmurphey & hgstrp!
-    lcd.clear().print("rmurphey, hgstrp");
+    lcd.clear().print("I :heart: you");
     lcd.cursor(1, 0);
 
     // Line 2: I <3 johnny-five
@@ -141,8 +151,8 @@ board.on("ready", function() {
     // can now be written as:
     lcd.print("I :heart: johnny-five");
 
-    this.wait(3000, function() {
-      lcd.clear().cursor(0, 0).print("I :check::heart: 2 :duck: :)");
+    this.wait(4000, function() {
+      lcd.clear().cursor(0, 0).print("Have a good day! :)");
     });
 
     this.repl.inject({
