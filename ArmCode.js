@@ -130,7 +130,7 @@ board.on("ready", function() {
       pins: [7, 8, 9, 10, 11, 12],
       backlight: 6,
       rows: 2,
-      cols: 20
+      cols: 16
 
 
       // Options:
