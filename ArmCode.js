@@ -32,12 +32,12 @@ var LeftRight = ['1'];
       LeftRight.shift();
   }
   if (this.y >= 0.75){
-    lcd.clear().print("Servo Mode : ");
-    lcd.cursor(1, 0);
-    lcd.print("Left Right");
     Servostring1();
     }
     if ( LeftRight[0] == null ){
+      lcd.clear().print("Servo Mode : ");
+      lcd.cursor(1, 0);
+      lcd.print("Left Right");
         if (this.x >= 0.5){
           servo.to(70);
           }
@@ -52,12 +52,12 @@ var LeftRight = ['1'];
     LeftRight.unshift('1');
   }
   if (this.y <= -0.75){
-    lcd.clear().print("Servo Mode : ");
-    lcd.cursor(1, 0);
-    lcd.print("Turn Degree");
     Servostring2();
   }
     if ( LeftRight[0] == '1' ){
+      lcd.clear().print("Servo Mode : ");
+      lcd.cursor(1, 0);
+      lcd.print("Turn Degree");
           if (this.x >= 0.5){
             servo.step(-2);
             }
