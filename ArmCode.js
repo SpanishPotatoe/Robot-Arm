@@ -23,8 +23,7 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
-var LeftRight = ['1'],
-  array max(1);
+var LeftRight = ['1'];
 
   joystick.on("change", function() {
     console.log("Joystick");
