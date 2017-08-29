@@ -42,18 +42,15 @@ board.on("ready", function() {
 
     var LeftRight
 
-    if (this.y >= 0.75){
+    if (this.y >= -0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
       var LeftRight = true
     }
 
-    if (this.y > -0.75 && this.y < 0.75){
-       if (this.y >= 0.75){
-         var LeftRight = true
-       }
-    }
+
+
 
 
     if ( LeftRight == true ){
