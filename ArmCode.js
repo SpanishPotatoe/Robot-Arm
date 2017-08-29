@@ -22,17 +22,55 @@ board.on("ready", function() {
     //   [ x, y ]
     pins: ["A0", "A1"]
   });
+var servoMode = null
 var joystickPosition = "center";
 joystick.on("change", function() {
+  //Determine position of joystick
+  if ((Math.round(this.y * 100) / 100) >= 0.75 )         { joystickPosition = "up"    }
+  if ((Math.round(this.x * 100) / 100) >= 0.5  )         { joystickPosition = "lt"    }
+  if (Math.round(this.y) == 0 && Math.round(this.x) == 0){ joystickPosition = "center"}
+  if ((Math.round(this.x * 100) / 100) <= -0.5 )         { joystickPosition = "rt"    }
+  if ((Math.round(this.y * 100) / 100) <= -0.75)         { joystickPosition = "down"  }
   console.log("Joystick");
   console.log("  x : ", this.x);
   console.log("  y : ", this.y);
   console.log("--------------------------------------");
-  if (this.y >= 0.75){
+  //Handle joystick up
+  if (joystickPosition == "up"){
+    //enter servo mode : full swing back
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
-    lcd.print("Left Right");
-    joystickPosition = "up"
+    lcd.print("Full Swing Back");
+    servoMode = 'FSB'
+  }
+  //Handle joystick down
+  if (joystickPosition == "down"){
+    //enter servo mode : Incremental hold
+    lcd.clear().print("Servo Mode : ");
+    lcd.cursor(1, 0);
+    lcd.print("Incremental hold");
+    servoMode = 'IH'
+  }
+  //Handle joystick center
+  if (joystickPosition == "center"){
+    //determine Servo  mode
+    if (servoMode = 'FSB'){  servo.to(105);  }
+  }
+  //Handle joystick rt
+  if (joystickPosition == "rt"){
+    //determine Servo  mode
+    if (servoMode = 'FSB'){  servo.to(155);  }
+    if (servoMode = 'IH') {  servo.step(+2); }
+  }
+  //Handle joystick lt
+  if (joystickPosition == "lt"){
+    //determine Servo  mode
+    if (servoMode = 'FSB'){   servo.to(70);  }
+    if (servoMode = 'IH'){   servo.step(-2)  }
+  }
+
+/*  if (this.y >= 0.75){
+
   }
   if ( joystickPosition == "up" ){
     if (this.x >= 0.5){
@@ -48,7 +86,7 @@ joystick.on("change", function() {
   if (this.y <= -0.75){
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
-    lcd.print("Turn Degree");
+    lcd.print("Incremental hold");
     joystickPosition = "down"
   }
   if ( joystickPosition = "down" ){
@@ -59,6 +97,13 @@ joystick.on("change", function() {
       servo.step(+2);
     }
   }
+
+*/
+
+
+
+
+
 console.log(joystickPosition);
 });
   // Create a new 'servo' hardware instance
