@@ -1,6 +1,6 @@
 
 
-var ServoArray = [ 'leftright' , 10 ]
+var ServoArray = [ 'Message Received' , 10 ]
 
 
 /*
