@@ -12,7 +12,7 @@ console.log( "I WORK!");
 console.log(ServoArray[0]);
 
 */
-  var value1 = console.log(1);
+  var value1 = console.log();
 
 var cheese = .75
 
