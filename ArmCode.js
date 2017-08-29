@@ -41,7 +41,7 @@ joystick.on("change", function() {
         if (this.x >= 0.5){
           servo.to(70);
         }
-        if (this.x <= 0.5 && this.x >= -0.5){
+        if (this.x < 0.5 && this.x > -0.5){
           servo.to(105);
         }
         if (this.x <= -0.5){
