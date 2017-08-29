@@ -77,9 +77,6 @@ board.on("ready", function() {
 
   }
 
-  if (this.y <= 0.75){
-    var leftRight = 0
-  }
 
 console.log(leftRight);
 
