@@ -41,14 +41,14 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var leftright = false
+    var leftright
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
-      var leftright = true
+
 
     }
 
@@ -73,7 +73,6 @@ board.on("ready", function() {
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
 
-     var leftright = false
   }
 console.log(leftright);
 
