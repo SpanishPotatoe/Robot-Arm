@@ -40,23 +40,19 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var value1 = return 1
+    var leftRight
 
-    function JoystickToggle(){
-      if (this.y >= .75 ){
-        Object.create(Value1);
-      }
-    }
+ 
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      JoystickToggle();
+      var leftRight = 1
     }
 
 
-    if ( value1 == 1 ){
+    if ( leftRight == 1 ){
 
       if (this.x >= 0.5){
       servo.to(70);
@@ -77,11 +73,11 @@ board.on("ready", function() {
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
-
+    var leftRight = 0
   }
 
 
-console.log();
+console.log(leftRight);
 
   });
 
