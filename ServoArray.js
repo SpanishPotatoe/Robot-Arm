@@ -1,7 +1,8 @@
 
 
-var ServoArray = [ 'LeftRight' , 10 ]
+var ServoArray = [ LeftRight , 10 ]
 
+  var LeftRight = true
 
 /*
       if (this.x >= 0.5){
