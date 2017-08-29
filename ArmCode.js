@@ -42,6 +42,14 @@ board.on("ready", function() {
 
     var leftRight = 0
 
+    if (this.y > 0){
+      var leftRight = 1
+    }
+    if (this.y < 0){
+      var leftRight = 0
+    }
+
+
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
@@ -49,9 +57,6 @@ board.on("ready", function() {
       var leftRight = 1
     }
 
-    if (this.y >= -0.75){
-      var leftRight = 1
-    }
 
     if ( leftRight == 1 ){
 
