@@ -22,6 +22,7 @@ var five = require("johnny-five"),
 
 var board = new five.Board();
 
+var leftRight = 0
 
 board.on("ready", function() {
 
@@ -40,8 +41,6 @@ board.on("ready", function() {
 
 
     var ServoArray = require ('./ServoArray');
-
-    var leftRight = 0
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
