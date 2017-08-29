@@ -43,7 +43,7 @@ board.on("ready", function() {
     var leftRight
 
     if ( this.y >= 0){
-      var leftright = 1
+      var leftRight = 1
     }
 
     if (this.y >= 0.75){
