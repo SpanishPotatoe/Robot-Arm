@@ -30,7 +30,7 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
-var LeftRight = '1'.split('');
+var LeftRight = [1]
 
   joystick.on("change", function() {
     console.log("Joystick");
@@ -58,7 +58,7 @@ function  Servostring1(){
 
 
 
-    if ( LeftRight == '' ){
+    if ( LeftRight == undefined ){
 
       if (this.x >= 0.5){
       servo.to(70);
@@ -84,7 +84,7 @@ function  Servostring1(){
     Servostring2();
   }
 
-  if ( LeftRight == '1' ){
+  if ( LeftRight > 0 ){
 
     if (this.x >= 0.5){
     servo.step(-2);
