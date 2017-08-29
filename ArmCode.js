@@ -26,11 +26,11 @@ var servoMode = null
 var joystickPosition = "center";
 joystick.on("change", function() {
   //Determine position of joystick
-  if ((Math.round(this.y * 100) / 100) >= 0.75 )         { joystickPosition = "up"    }
+  if ((Math.round(this.y * 100) / 100) >= 0.75 )         { joystickPosition = "down"    }
   if ((Math.round(this.x * 100) / 100) >= 0.5  )         { joystickPosition = "lt"    }
   if (Math.round(this.y) == 0 && Math.round(this.x) == 0){ joystickPosition = "center"}
   if ((Math.round(this.x * 100) / 100) <= -0.5 )         { joystickPosition = "rt"    }
-  if ((Math.round(this.y * 100) / 100) <= -0.75)         { joystickPosition = "down"  }
+  if ((Math.round(this.y * 100) / 100) <= -0.75)         { joystickPosition = "up"  }
   console.log("Joystick");
   console.log("  x : ", this.x);
   console.log("  y : ", this.y);
