@@ -15,4 +15,6 @@ console.log(ServoArray[0]);
 
 var leftright = true
 
+  leftright = false
+
 console.log(leftright);
