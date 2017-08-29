@@ -48,7 +48,7 @@ board.on("ready", function() {
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
-      leftright = true
+      var leftright = true
 
     }
 
@@ -73,7 +73,7 @@ board.on("ready", function() {
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
 
-     leftright = false
+     var leftright = false
   }
 
 
