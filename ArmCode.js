@@ -28,6 +28,9 @@ var LeftRight = ['1'];
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
+    lcd.clear().print("Servo Mode : ");
+    lcd.cursor(1, 0);
+    lcd.print("Turn Degree");
     function  Servostring1(){
       LeftRight.shift();
   }
