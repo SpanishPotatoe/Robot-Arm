@@ -47,7 +47,9 @@ board.on("ready", function() {
       lcd.cursor(1, 0);
       lcd.print("Left Right");
       var LeftRight = true
-    }else(this.y <= -0.75){
+    }
+
+    if (this.y <= -0.75){
       var LeftRight = false
     }
 
