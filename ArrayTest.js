@@ -12,9 +12,12 @@ console.log( "I WORK!");
 console.log(ServoArray[0]);
 
 */
+  var value1 = 1
 
-var leftright = true
+  function JoystickToggle(){
+    if (this.y >= .75 ){
+      Object.create(value1);
+    }
 
-  leftright = false
-
-console.log(leftright);
+    console.log(JoystickToggle());
+  }
