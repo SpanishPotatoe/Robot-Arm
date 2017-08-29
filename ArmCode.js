@@ -38,25 +38,14 @@ var LeftRight = '1'.split('');
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-
-
     var ServoArray = require ('./ServoArray');
-
-
-
-function  Servostring1(){
-  LeftRight.shift();
-}
-
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      Servostring1();
+      ServoArray[0];
     }
-
-
 
     if ( LeftRight == '' ){
 
@@ -73,15 +62,11 @@ function  Servostring1(){
     }
   }
 
-  function  Servostring2(){
-    LeftRight.unshift('1');
-  }
-
   if (this.y <= -0.75){
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
-    Servostring2();
+    ServoArray[1];
   }
 
   if ( LeftRight[0] == '1' ){
@@ -98,12 +83,9 @@ function  Servostring1(){
 console.log(LeftRight);
 
   });
-
   // Create a new 'servo' hardware instance
   var servo = new five.Servo(5);
-
   // Servo alternate constructor with options
-
   var servo = new five.Servo({
     id: "MyServo",     // User defined id
     pin: 5,           // Which pin is it attached to?
@@ -114,54 +96,41 @@ console.log(LeftRight);
     startAt: 95,       // Immediately move to a degree
     center: true,      // overrides startAt if true and moves the servo to the center of the range
   });
-
-
   // Add servo to REPL (optional)
   this.repl.inject({
     servo: servo
   });
-
-
   // Servo API
-
    //min()
   //
   // set the servo to the minimum degrees
   // defaults to 0
   //
   // eg. servo.min();
-
    //max()
   //
   // set the servo to the maximum degrees
   // defaults to 180
   //
   // eg. servo.max();
-
   // center()
   //
   // centers the servo to 90°
   //
   // servo.center();
-
   // to( deg )
   //
   // Moves the servo to position by degrees
   //
   // servo.to( 90 );
-
   // step( deg )
   //
   // step all servos by deg
   //
   // eg. array.step( -20 );
-
   var led = new five.Led(13);
-
   // "blink" the led in 500ms on-off phase periods
   led.blink(500);
-
-
   lcd = new five.LCD({
       // LCD pin name  RS  EN  DB4 DB5 DB6 DB7
       // Arduino pin # 7    8   9   10  11  12
@@ -169,28 +138,21 @@ console.log(LeftRight);
       backlight: 6,
       rows: 2,
       cols: 16
-
-
       // Options:
       // bitMode: 4 or 8, defaults to 4
       // lines: number of lines, defaults to 2
       // dots: matrix dimensions, defaults to "5x8"
     });
-
     // Tell the LCD you will use these characters:
     lcd.useChar("heart");
-
     // Line 1: Hi rmurphey & hgstrp!
     //lcd.clear().print("I :heart: you!");
     //lcd.cursor(1, 0);
-
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
     // can now be written as:
     //lcd.print("I :heart: johnny-five");
-
     this.repl.inject({
       lcd: lcd
     });
-
 });
