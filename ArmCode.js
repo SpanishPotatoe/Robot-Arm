@@ -45,10 +45,10 @@ board.on("ready", function() {
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      Object.create(ServoArray[0]);
+
     }
 
-    if ( Object.create(ServoArray[0]) = true ){
+    if (  = true ){
 
       if (this.x >= 0.5){
       servo.to(155)
@@ -155,8 +155,8 @@ board.on("ready", function() {
     lcd.useChar("heart");
 
     // Line 1: Hi rmurphey & hgstrp!
-    lcd.clear().print("I :heart: you!");
-    lcd.cursor(1, 0);
+    //lcd.clear().print("I :heart: you!");
+    //lcd.cursor(1, 0);
 
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
