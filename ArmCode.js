@@ -40,7 +40,7 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var leftRight = 
+    var leftRight
 
 
     if (this.y >= 0.75){
