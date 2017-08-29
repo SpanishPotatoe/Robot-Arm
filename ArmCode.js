@@ -41,14 +41,14 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var global.leftright
+    var global leftright
 
     if (this.y >= 0.5){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
-      var global.leftright = true
+      var global leftright = true
 
     }
 
@@ -73,7 +73,7 @@ board.on("ready", function() {
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
 
-     var global.leftright = false
+     var global leftright = false
   }
 
 
