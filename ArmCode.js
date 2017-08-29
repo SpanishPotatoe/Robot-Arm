@@ -24,7 +24,7 @@ board.on("ready", function() {
   });
 
 var LeftRight = ['1'],
-array.maximum(1);
+  array maximum(1);
 
   joystick.on("change", function() {
     console.log("Joystick");
