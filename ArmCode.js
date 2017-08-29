@@ -61,14 +61,14 @@ joystick.on("change", function() {
   //Handle joystick rt
   if (joystickPosition == "rt"){
     //determine Servo  mode
-    if (servoMode = 'FSB'){  servo.to(155);  }
-    if (servoMode = 'IH') {  servo.step(+2); }
+    if (servoMode == 'FSB'){  servo.to(155);  }
+    if (servoMode == 'IH') {  servo.step(+2); }
   }
   //Handle joystick lt
   if (joystickPosition == "lt"){
     //determine Servo  mode
-    if (servoMode = 'FSB'){   servo.to(70);  }
-    if (servoMode = 'IH'){   servo.step(-2)  }
+    if (servoMode == 'FSB'){   servo.to(70);  }
+    if (servoMode == 'IH'){   servo.step(-2)  }
   }
 
 /*  if (this.y >= 0.75){
