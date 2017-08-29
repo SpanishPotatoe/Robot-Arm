@@ -1,10 +1,6 @@
 
 
-var ServoArray = [ LeftRight , 10 ]
-
-
- var LeftRight = true
-
+var ServoArray = [ 'LeftRight' , 10 ]
 
 
 /*
