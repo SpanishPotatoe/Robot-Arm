@@ -144,7 +144,6 @@ board.on("ready", function() {
 
     // Line 1: Hi rmurphey & hgstrp!
     lcd.clear().print("I :heart: you!");
-    lcd.cursor(1, 0);
 
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
