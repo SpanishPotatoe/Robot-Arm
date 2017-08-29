@@ -42,11 +42,16 @@ board.on("ready", function() {
 
     var LeftRight = 'Servo'.split('');
 
+function  Servostring(); {
+  LeftRight.shift();
+}
+
+
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      LeftRight.shift();
+      Servostring();
     }
 
 
