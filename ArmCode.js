@@ -42,7 +42,11 @@ board.on("ready", function() {
     var ServoArray = require ('./ServoArray');
 
     if (this.y >= 0.5){
-      console.log(ServoArray[0]);
+      lcd.clear().print("Servo Mode : ");
+      lcd.cursor(1, 0);
+      lcd.print("Left Right");
+
+
     }
 
     if (this.x >= 0.5){
@@ -149,10 +153,8 @@ board.on("ready", function() {
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
     // can now be written as:
-    lcd.print("I :heart: johnny-five");
+    //lcd.print("I :heart: johnny-five");
 
-    this.wait(5000, function() {
-      lcd.clear().cursor(0, 0).print("Have a good day! :)");
     });
 
     this.repl.inject({
