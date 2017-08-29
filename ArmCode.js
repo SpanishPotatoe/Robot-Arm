@@ -49,7 +49,7 @@ board.on("ready", function() {
 
     }
 
-    if (  = true ){
+    if ( true = true ){
 
       if (this.x >= 0.5){
       servo.to(70)
