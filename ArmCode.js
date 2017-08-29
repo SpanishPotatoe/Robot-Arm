@@ -48,9 +48,9 @@ board.on("ready", function() {
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
-
-
     }
+
+
 
     if ( leftright = true ){
 
@@ -66,6 +66,7 @@ board.on("ready", function() {
       servo.to(155);
     }
   }
+
 
 
   if (this.y <= -0.75){
