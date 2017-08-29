@@ -30,15 +30,13 @@ board.on("ready", function() {
     pins: ["A0", "A1"]
   });
 
-var LeftRight = '1'.split('');
-
   joystick.on("change", function() {
     console.log("Joystick");
     console.log("  x : ", this.x);
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-    var ServoArray = require ('./ServoArray');
+    var ServoArray = require ('./ServoArray', './LeftRight');
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
