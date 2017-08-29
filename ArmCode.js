@@ -48,6 +48,8 @@ board.on("ready", function() {
 
       var leftright = true
 
+    }else {
+      var leftright = false
     }
 
     if ( leftright = true ){
