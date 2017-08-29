@@ -40,7 +40,7 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-    var leftRight = 1
+    var leftRight = 
 
     function JoystickToggle(){
       if (this.y >= .75 ){
