@@ -11,24 +11,19 @@
 //  |   |   |   |   | |  |    |  | \  | \  |     \  \___/  /  \  \_/  | |  \_/    | | \_____    |
 //  |   |___|   |___| |__|    |__| |__| |__|      \_______/    \_____/   \____/|__|  \_____/    |
 //  |___________________________________________________________________________________________|
-
 // Coding for ArmBot: Javascript
-
-// 2 Motor, 1 servo's, 1 joystick
-
-
+// 1 servo's, 1 joystick, 1 LCD screen, 1 Breadboard, 1 Potentiometer, 1 arduino
 var five = require("johnny-five"),
   board, lcd;
-
 var board = new five.Board();
-
 board.on("ready", function() {
-
   // Create a new `joystick` hardware instance.
   var joystick = new five.Joystick({
     //   [ x, y ]
     pins: ["A0", "A1"]
   });
+
+var LeftRight = '1'.split('');
 
   joystick.on("change", function() {
     console.log("Joystick");
@@ -36,14 +31,25 @@ board.on("ready", function() {
     console.log("  y : ", this.y);
     console.log("--------------------------------------");
 
-    var ServoArray = require ('./ServoArray', './LeftRight');
+
+
+    var ServoArray = require ('./ServoArray');
+
+
+
+function  Servostring1(){
+  LeftRight.shift();
+}
+
 
     if (this.y >= 0.75){
       lcd.clear().print("Servo Mode : ");
       lcd.cursor(1, 0);
       lcd.print("Left Right");
-      ServoArray[0];
+      Servostring1();
     }
+
+
 
     if ( LeftRight == '' ){
 
@@ -60,11 +66,15 @@ board.on("ready", function() {
     }
   }
 
+  function  Servostring2(){
+    LeftRight.unshift('1');
+  }
+
   if (this.y <= -0.75){
     lcd.clear().print("Servo Mode : ");
     lcd.cursor(1, 0);
     lcd.print("Turn Degree");
-    ServoArray[1];
+    Servostring2();
   }
 
   if ( LeftRight[0] == '1' ){
