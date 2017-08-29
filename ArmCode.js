@@ -42,11 +42,8 @@ board.on("ready", function() {
     var ServoArray = require ('./ServoArray');
 
     if (this.y >= 0.5){
-      lcd.clear().print("Servo Mode :");
-      lcd.print("LeftRight");
-
+      console.log(ServoArray[0]);
     }
-
 
     if (this.x >= 0.5){
     servo.to(65)
@@ -133,7 +130,7 @@ board.on("ready", function() {
       pins: [7, 8, 9, 10, 11, 12],
       backlight: 6,
       rows: 2,
-      cols: 20
+      cols: 16
 
 
       // Options:
@@ -147,12 +144,16 @@ board.on("ready", function() {
 
     // Line 1: Hi rmurphey & hgstrp!
     lcd.clear().print("I :heart: you!");
+    lcd.cursor(1, 0);
 
     // Line 2: I <3 johnny-five
     // lcd.print("I").write(7).print(" johnny-five");
     // can now be written as:
     lcd.print("I :heart: johnny-five");
 
+    this.wait(5000, function() {
+      lcd.clear().cursor(0, 0).print("Have a good day! :)");
+    });
 
     this.repl.inject({
       lcd: lcd
