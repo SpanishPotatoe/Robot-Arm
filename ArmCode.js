@@ -75,6 +75,7 @@ function  Servostring1(){
 
   function  Servostring2(){
     LeftRight.unshift('1');
+  }
 
   if (this.y <= -0.75){
     lcd.clear().print("Servo Mode : ");
