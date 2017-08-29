@@ -46,16 +46,6 @@ board.on("ready", function() {
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
-      if (this.x >= 0.5){
-      servo.to(65)
-    }
-
-    if (this.x <= 0.5 && this.x >= -0.5){
-      servo.to(105)
-    }
-
-    if (this.x <= -0.5){
-      servo.to(155)
     }
 
   }
