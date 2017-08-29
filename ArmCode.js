@@ -143,7 +143,7 @@ board.on("ready", function() {
     lcd.useChar("heart");
 
     // Line 1: Hi rmurphey & hgstrp!
-    lcd.clear().print("I :heart: you");
+    lcd.clear().print("I :heart: you!");
     lcd.cursor(1, 0);
 
     // Line 2: I <3 johnny-five
@@ -151,7 +151,7 @@ board.on("ready", function() {
     // can now be written as:
     //lcd.print("I :heart: johnny-five");
 
-    this.wait(4000, function() {
+    this.wait(5000, function() {
       lcd.clear().cursor(0, 0).print("Have a good day! :)");
     });
 
