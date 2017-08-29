@@ -14,8 +14,10 @@ console.log(ServoArray[0]);
 */
   var value1 = 1
 
+var cheese = .75
+
   function JoystickToggle(){
-    if (this.y >= .75 ){
+    if (cheese >= .75 ){
       Object.create(value1);
     }
 
