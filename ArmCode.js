@@ -40,7 +40,7 @@ board.on("ready", function() {
 
     var ServoArray = require ('./ServoArray');
 
-var value1 = 1
+    var value1 = return 1
 
     function JoystickToggle(){
       if (this.y >= .75 ){
@@ -56,7 +56,7 @@ var value1 = 1
     }
 
 
-    if ( value1 == true ){
+    if ( value1 == 1 ){
 
       if (this.x >= 0.5){
       servo.to(70);
