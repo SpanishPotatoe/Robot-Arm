@@ -46,10 +46,11 @@ board.on("ready", function() {
       lcd.cursor(1, 0);
       lcd.print("Left Right");
 
+      return ServoArray[0];
 
     }
 
-    if ( true = true ){
+    if ( leftright = true ){
 
       if (this.x >= 0.5){
       servo.to(70)
