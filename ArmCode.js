@@ -50,7 +50,9 @@ board.on("ready", function() {
     }
 
     if (this.y > -0.75 && this.y < 0.75){
-      var LeftRight = LeftRight
+       if (this.y >= 0.75){
+         var LeftRight = true
+       }
     }
 
 
