@@ -23,3 +23,6 @@ var cheese = .75
 
   JoystickToggle();
   }
+var cheese = 0
+
+JoystickToggle();
