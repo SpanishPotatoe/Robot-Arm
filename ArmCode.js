@@ -113,7 +113,7 @@ console.log(joystickPosition);
     id: "MyServo",     // User defined id
     pin: 5,           // Which pin is it attached to?
     type: "standard",  // Default: "standard". Use "continuous" for continuous rotation servos
-    range: [55,155],    // Default: 0-180
+    range: [70,155],    // Default: 0-180
     fps: 100,          // Used to calculate rate of movement between positions
     invert: false,     // Invert all specified positions
     startAt: 95,       // Immediately move to a degree
